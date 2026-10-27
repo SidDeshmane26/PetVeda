@@ -34,6 +34,11 @@ input {
       font: inherit;
 }
 
+.fa-solid {
+    color: #164d2d;
+    font-size: 11px;
+}
+
 /* ================= Header ================== */
 
 .pet-header {
@@ -231,4 +236,188 @@ input {
       align-self: end;
       border-radius: 8px;
 }
+
+.right-hero > img{
+      width: 100%;
+      max-width: 440px;
+      height: 340px;
+      object-fit: contain;
+      object-position: center;
+      border-radius: 45% 45% 10% 10%;
+      mix-blend-mode: multiply;
+}
+
+.paw {
+      width: 30px;
+      
+}
+
+/* ========================== General Section=========================== */
+
+.section {
+      
+      margin: 0 auto;
+      padding: 24px 5% 0;
+}
+
+.section-title {
+      text-align: center;
+      font-size: 19px;
+      font-weight: 800;
+      margin-bottom: 22px;
+}
+
+.section-title::first-letter {
+      color: #79a43e;
+}
+
+/* ===================== Category Cards ====================== */
+
+.category-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 22px;
+}
+
+.category-card {
+      border-radius: 18px;
+      overflow: hidden;
+      text-align: center;
+      background: white;
+      box-shadow: 0 3px 12px #0000000d;
+     transition: transform 0.3s;
+}
+
+.category-card:hover {
+      transform: translateY(-8px);
+}
+
+.category-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: contain;
+      object-position: center;
+      padding: 12px 10px 0;
+      border-radius: 50% 50% 0 0;
+}
+
+.cat-bg img {
+      background: #d7e8c5;
+}
+
+.dog-bg img {
+      background: #d8e8f0;
+}
+
+.bird-bg img {
+      background: #fff0c1;
+}
+
+.rabbit-bg img {
+      background: #f7dce0;
+}
+
+.category-info {
+      position: relative;
+      padding: 12px 5px 15px;
+      background: #fffefa;
+}
+
+.category-info h3 {
+      font-size: 15px;
+      margin-bottom: 4px;
+}
+
+.category-info span {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--green);
+      margin-bottom: 5px;
+}
+
+/* =================== Popular Product===================== */
+
+.product-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 22px;
+}
+
+.product-card {
+      min-width: 0;
+      background: #fffefa;
+      border: 1px solid #f0ebe2;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 3px 10px #0000000c;
+      transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px #00000012;
+}
+
+.product-image {
+      height: 150px;
+      padding: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: white;
+}
+
+.product-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 8px;
+}
+
+.product-info {
+      padding: 12px;
+}
+
+.product-info h3 {
+      font-size: 13px;
+      line-height: 1.4;
+}
+
+.stars {
+      color: var(--gold);
+      letter-spacing: 1px;
+      font-size: 15px;
+}
+
+.stars small {
+      color: #777;
+      font-size: 9px;
+      letter-spacing: 0;
+}
+
+.product-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 8px;
+}
+
+.product-bottom strong {
+      font-size: 14px;
+}
+
+.product-bottom button {
+      width: 32px;
+      height: 32px;
+      border: none;
+      border-radius: 8px;
+      background: var(--green);
+      color: white;
+      transition: background 0.3s;
+}
+
+.product-bottom button:hover {
+      background: #287344;
+}
+
 
