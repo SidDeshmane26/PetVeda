@@ -28,8 +28,8 @@
                   </a>
 
                   <form class="search">
-                        <input type="search" placeholder="Search for products...">
-                        <select aria-label="Product catedory">
+                        <input type="search" id="searchInput" placeholder="Search for products...">
+                        <select aria-label="Product category">
                               <option >All category</option>
                               <option >Dogs</option>
                               <option >Cats</option>
@@ -39,9 +39,17 @@
                   </form>
 
                   <div class="header-links">
-                        <a href="#">♙<small>Account</small></a>
-                        <a href="#">♡<small>Wishlist</small></a>
-                        <a href="#">🛒<small>Cart</small></a>
+                        <a href="#">
+                              <i class="fa-solid fa-circle-user"></i>
+                              <small>Account</small></a>
+
+                        <a href="#">
+                              <i class="fa-solid fa-heart"></i>
+                              <small>Wishlist</small></a>
+
+                        <a href="#cart">
+                              <i class="fa-solid fa-cart-shopping"></i>
+                              <small>Cart(<span id="cartCount">0</span>)</small></a>
                   </div>
 
 
@@ -137,11 +145,11 @@
                         </div>
 
                         <div class="product-info">
-                              <h3>Premium Dog Food</h3>
+                              <h3 class="product-name">Premium Dog Food</h3>
                               <p class="stars">★★★★★ <small>(128)</small></p>
                               <div class="product-bottom">
                                     <strong>$19.99</strong>
-                                    <button aria-label="Add dog food to cart">🛒</button>
+                                    <button aria-label="Add dog food to cart" class="add-to-cart" >🛒</button>
                               </div>
                         </div>
                   </article>
@@ -156,7 +164,7 @@
                               <p class="stars">★★★★★ <small>(96)</small></p>
                               <div class="product-bottom">
                                     <strong>$7.99</strong>
-                                    <button aria-label="Add dog food to cart">🛒</button>
+                                    <button aria-label="Add dog food to cart" class="add-to-cart">🛒</button>
                               </div>
                         </div>
                   </article>
@@ -307,6 +315,8 @@
             </div>
        </footer>
 
+
+       <script src="script.js"></script>
 </body>
 </html>
 
