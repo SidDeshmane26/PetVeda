@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>PetVeda</title>
+
+      
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css">
+
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      
+      <div class="sticky">
+            <header class="pet-header">
+                  <a href="" class="logo">
+                        <!-- <span class="paw">🐾</span> -->
+                        <img src="Assets/hero_back1.png" class="hero-logo">
+                        <div>
+                              <h2>Pet Veda</h2>
+                              <p>Happy Pets, Happy Life</p>
+                        </div>
+                  </a>
+
+                  <form class="search">
+                        <input type="search" id="searchInput" placeholder="Search for products...">
+                        <select aria-label="Product category">
+                              <option >All category</option>
+                              <option >Dogs</option>
+                              <option >Cats</option>
+                              <option >Birds</option>
+                              <option >Small Pets</option>
+                        </select>
+                  </form>
+
+                  <div class="header-links">
+                        <a href="#">
+                              <i class="fa-solid fa-circle-user"></i>
+                              <small>Account</small></a>
+
+                        <a href="#">
+                              <i class="fa-solid fa-heart"></i>
+                              <small>Wishlist</small></a>
+
+                        <a href="#cart">
+                              <i class="fa-solid fa-cart-shopping"></i>
+                              <small>Cart(<span id="cartCount">0</span>)</small></a>
+                  </div>
+
+
+            </header>
+
+            <nav class="navbar">
+                        <a href="#" class="active">Home</a>
+                        <a href="#products">Shop</a>
+                        <a href="#categories">Dogs</a>
+                        <a href="#categories">Cats</a>
+                        <a href="#categories">Birds</a>
+                        <a href="#categories">Small Pets</a>
+                        <a href="#favorites">Favorite</a>
+                        <a href="#footer">Contact Us</a>   
+            </nav>
+      </div>
+
+
+      <section class="hero">
+            <div class="left-hero>
+                  <div class="hero-content">
+                        <h1>Treat Your Pet <br>
+                              <span>like royalty!</span>
+                        </h1>
+
+                        <p class="hero-description">
+                              Premium food, toys & accessories for 
+                              happy and healthy pets.
+                        </p>
+
+                        <a href="#products" class="shop-button">
+                        SHOP NOW →
+                        </a>
+                        <!-- <img src="Assets/hero_back1.png" class="hero-img1"> -->
+                  </div>
+            </div>
+
+            <div class="right-hero">
+                       <img src="Assets/hero1.png" class="hero-img">
+                       <img src="Assets/hero_back2.png" class="hero-img2">
+            </div>
+
+      </section>
+
+
+      <section class="section" id="categories">
+            <h2 class="section-title">SHOP BY CATEGORY</h2>
+
+            <div class="category-grid">
+                  <a href="#products" class="category-card cat-bg">
+                        <img src="Assets/Cats/cat1.png" alt="Cat">
+                        <div class="category-info">
+                              <h3>Cats</h3>
+                              <span>Explore Now <i class="fa-sharp fa-solid fa-arrow-right"></i></span>
+                        </div>
+                  </a>
+
+                  <a href="#products" class="category-card dog-bg">
+                        <img src="Assets/Dogs/dog1.png" alt="Cat">
+                        <div class="category-info">
+                              <h3>Dogs</h3>
+                              <span>Explore Now <i class="fa-sharp fa-solid fa-arrow-right"></i></span>
+                        </div>
+                  </a>
+
+                  <a href="#products" class="category-card bird-bg">
+                        <img src="Assets/Birds/bird1.png" alt="bird">
+                        <div class="category-info">
+                              <h3>Birds</h3>
+                              <span>Explore Now <i class="fa-sharp fa-solid fa-arrow-right"></i></span>
+                        </div>
+                  </a>
+
+                  <a href="#products" class="category-card rabbit-bg">
+                        <img src="Assets/Small_pets/rabbit1.png" alt="Cat">
+                        <div class="category-info">
+                              <h3>Small Pets</h3>
+                              <span>Explore Now <i class="fa-sharp fa-solid fa-arrow-right"></i></span>
+                        </div>
+                  </a>
+
+            </div>
+      </section>
+
+      <!-- Products -->
+      <section class="section" id="products">
+            <h2 class="section-title">POPULAR PRODUCTS</h2>
+
+            <div class="product-grid">
+                  <article class="product-card">
+                        <div class="product-image">
+                              <img src="Assets/Dogs/Dogs_food.jpg" alt="Dog food">
+                        </div>
+
+                        <div class="product-info">
+                              <h3 class="product-name">Premium Dog Food</h3>
+                              <p class="stars">★★★★★ <small>(128)</small></p>
+                              <div class="product-bottom">
+                                    <strong>$19.99</strong>
+                                    <button aria-label="Add dog food to cart" class="add-to-cart" >🛒</button>
+                              </div>
+                        </div>
+                  </article>
+
+                  <article class="product-card">
+                        <div class="product-image">
+                              <img src="Assets/Dogs/dogs_toys.png" alt="Dog Toy">
+                        </div>
+
+                        <div class="product-info">
+                              <h3>Durable Dog Toy</h3>
+                              <p class="stars">★★★★★ <small>(96)</small></p>
+                              <div class="product-bottom">
+                                    <strong>$7.99</strong>
+                                    <button aria-label="Add dog food to cart" class="add-to-cart">🛒</button>
+                              </div>
+                        </div>
+                  </article>
+
+                  <article class="product-card">
+                        <div class="product-image">
+                              <img src="Assets/Dogs/dogs_belt.png" alt="Dog belt">
+                        </div>
+
+                        <div class="product-info">
+                              <h3>Comfort Pet Collar</h3>
+                              <p class="stars">★★★★★ <small>(84)</small></p>
+                              <div class="product-bottom">
+                                    <strong>$9.99</strong>
+                                    <button aria-label="Add dog food to cart">🛒</button>
+                              </div>
+                        </div>
+                  </article>
+
+                  <article class="product-card">
+                        <div class="product-image">
+                              <img src="Assets/Dogs/pet_bed.png" alt="Pet beds">
+                        </div>
+
+                        <div class="product-info">
+                              <h3>Cozy Pet Bed</h3>
+                              <p class="stars">★★★★★ <small>(128)</small></p>
+                              <div class="product-bottom">
+                                    <strong>$19.99</strong>
+                                    <button aria-label="Add dog food to cart">🛒</button>
+                              </div>
+                        </div>
+                  </article>
+            </div>
+      </section>
+
+      <!-- Customer favorits-->
+       <section class="section" id="favorites">
+            <h2 class="section-title">CUSTOMER FAVORITES</h2>
+
+            <div class="favorite-grid">
+                  <article class="favorite-card bg">
+                        <img src="Assets/Favorite/Golden_retriver.png" alt="Happy buddy">
+                        <div>
+                              <h3>Happy Buddy</h3>
+                              <p>Golden Retriever</p>
+                              <span class="stars">★★★★★</span>
+                        </div>
+                  </article>
+
+                  <article class="favorite-card bg">
+                        <img src="Assets/Favorite/Milo.png" alt="Milo">
+                        <div>
+                              <h3>Milo</h3>
+                              <p>Shih Tzu</p>
+                              <span class="stars">★★★★★</span>
+                        </div>
+                  </article>
+
+                  <article class="favorite-card bg">
+                        <img src="Assets/Favorite/Luna.png" alt="Luna">
+                        <div>
+                              <h3>Luna</h3>
+                              <p>British Shorthair</p>
+                              <span class="stars">★★★★★</span>
+                        </div>
+                  </article>
+
+                  <article class="favorite-card bg">
+                        <img src="Assets/Favorite/Coco.png" alt="Coco">
+                        <div>
+                              <h3>Coco</h3>
+                              <p>Netherland Dwarf</p>
+                              <span class="stars">★★★★★</span>
+                        </div>
+                  </article>
+
+            </div>
+       </section>
+
+      <!-- Benefits -->
+       <section class="benefits">
+            <article>
+                  <span class="benefit-icon">♧</span>
+                  <div>
+                        <h3>100% Safe</h3>
+                        <p>Pet Friendly &<br>toxin-free products</p>
+                  </div>
+            </article>
+
+            <article>
+                <span class="benefit-icon">♡</span>
+                <div>
+                    <h3>Vet Approved</h3>
+                    <p>Trusted by<br>professionals</p>
+                </div>
+            </article>
+
+            <article>
+                <span class="benefit-icon">♢</span>
+                <div>
+                    <h3>Best Prices</h3>
+                    <p>Quality pets love,<br>prices you trust</p>
+                </div>
+            </article>
+       </section>
+
+       <footer class="footer" id="footer">
+            <div class="footer-brand">
+                  <h2>🐾 Pet Veda</h2>
+                  <p>Happy Pets, Happy Life</p>
+                  <p>Everything your pet needs,<br>all in one place.</p>
+                  <div class="socials">f　◎　℗　▶</div>
+            </div>
+
+            <div>
+                  <h4>SHOP</h4>
+                  <a href="#products">All Products</a>
+                  <a href="#categories">Dogs</a>
+                  <a href="#categories">Cats</a>
+                  <a href="#categories">Birds</a>
+                  <a href="#categories">Small Pets</a>
+            </div>
+
+            <div>
+                  <h4>CUSTOMER SERVICE</h4>
+                  <a href="#">My Account</a>
+                  <a href="#">Order Tracking</a>
+                  <a href="#">Returning & Refunds</a>
+                  <a href="#">Shipping Info</a>
+                  <a href="#">FAQs</a>
+            </div>
+
+            <div>
+                  <h4>INFORMATION</h4>
+                  <a href="#">About Us</a>
+                  <a href="#">Favorites</a>
+                  <a href="#">Privacy Policy</a>
+                  <a href="#">Terms & conditions</a>
+                  <a href="#">Contact US</a>
+            </div>
+
+            <div class="payment">
+                  <h4>WE ACCEPT</h4>
+                  <p>VISA　💳　AMEX</p>
+                  <p>PayPal　 Apple Pay</p>
+                  <p>Google Pay</p>
+            </div>
+       </footer>
+
+
+       <script src="script.js"></script>
+</body>
+</html>
+
