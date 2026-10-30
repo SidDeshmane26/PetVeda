@@ -135,3 +135,23 @@ span {
 .btn:hover {
     background: black;
 }
+
+/* Responsive for mobile 500px width*/
+@media (max-width: 500px) {
+   .card-container{
+    grid-template-columns: auto auto;
+    margin: 0;
+    padding: 0 10px;
+   }
+
+}
+/* Responsive for Tablet 800px */
+
+@media (max-width: 800px) {
+   .card-container{
+    grid-template-columns: auto auto;
+    margin: 0;
+    padding: 0 10px;
+   }
+
+}
