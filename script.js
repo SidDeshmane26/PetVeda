@@ -27,7 +27,7 @@ const cartCounter = document.getElementById("cartCount");
 const cartButtons = document.querySelectorAll(".add-to-cart");
 
 cartButtons.forEach(function (button) {
-    button.addEventListener("click", function () {
+    button.addEventListener("click", function () {                                              
         cartCount++;
 
         // Update cart quantity
