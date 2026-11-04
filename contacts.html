@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Pet Veda</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="contacts.css">
+</head>
+<body>
+
+  <div class="sticky">
+            <header class="pet-header">
+                  <a href="" class="logo">
+                        <!-- <span class="paw">🐾</span> -->
+                        <img src="Assets/hero_back1.png" class="hero-logo">
+                        <div>
+                              <h2>Pet Veda</h2>
+                              <p>Happy Pets, Happy Life</p>
+                        </div>
+                  </a>
+
+                  <form class="search">
+                        <input type="search" id="searchInput" placeholder="Search for products...">
+                        <select aria-label="Product category">
+                              <option >All category</option>
+                              <option >Dogs</option>
+                              <option >Cats</option>
+                              <option >Birds</option>
+                              <option >Small Pets</option>
+                        </select>
+                  </form>
+
+                  <div class="header-links">
+                        <a href="#">
+                              <i class="fa-solid fa-circle-user"></i>
+                              <small>Account</small></a>
+
+                        <a href="#">
+                              <i class="fa-solid fa-heart"></i>
+                              <small>Wishlist</small></a>
+
+                        <a href="#cart">
+                              <i class="fa-solid fa-cart-shopping"></i>
+                              <small>Cart(<span id="cartCount">0</span>)</small></a>
+                  </div>
+
+
+            </header>
+
+            <nav class="navbar">
+                        <a href="#" class="active">Home</a>
+                        <a href="#products">Shop</a>
+                        <a href="#categories">Dogs</a>
+                        <a href="#categories">Cats</a>
+                        <a href="#categories">Birds</a>
+                        <a href="#categories">Small Pets</a>
+                        <a href="#favorites">Favorite</a>
+                        <a href="/products.html">Products</a>
+                        <a href="/contacts.html">Contact Us</a>   
+            </nav>
+      </div>
+
+  <main class="contact-section">
+    <div class="section-title">
+      <h2>Get In Touch With Us</h2>
+      <p>If you have any query then get touch with us</p>
+    </div>
+
+   
+    <div class="contact-cards-grid">
+      <div class="info-card">
+        <div class="info-icon">📞</div>
+        <h3>Call Us</h3>
+        <p>Mon - Sat: 9:00 AM - 8:00 PM</p>
+        <a href="tel:+919876543210">+91 98765 43210</a>
+      </div>
+
+      <div class="info-card">
+        <div class="info-icon">✉️</div>
+        <h3>Email Support</h3>
+        <p>Expect a response within 24 hours</p>
+        <a href="mailto:support@petveda.com">support@petveda.com</a>
+      </div>
+
+      <div class="info-card">
+        <div class="info-icon">📍</div>
+        <h3>Visit Our Store</h3>
+        <p>Pet Veda</p>
+        <span>Pune, Maharashtra</span>
+      </div>
+    </div>
+
+  
+    <div class="contact-container">
+      <div class="form-wrapper">
+        <h3>Send Us Message</h3>
+        <p class="form-subtext">Fill out the form below and our team will get back to you shortly.</p>
+        
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" placeholder="e.g. Joan Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" placeholder="e.g. Joan@example.com" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" placeholder="e.g. +91 98765 43210">
+            </div>
+            <div class="form-group">
+              <label for="pet-type">Your Pet</label>
+              <select id="pet-type">
+                <option value="">Select Pet Type</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="bird">Bird</option>
+                <option value="small-pet">Small Pet</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <input type="text" id="subject" placeholder="What can we help you with?" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" rows="5" placeholder="Write your question or request here..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+    </main>
+
+    <footer class="footer" id="footer">
+            <div class="footer-grid">
+                  <div class="footer-brand">
+                        <h2>🐾 Pet Veda</h2>
+                        <p>Happy Pets, Happy Life</p>
+                        <p>Everything your pet needs,<br>all in one place.</p>
+                        <div class="socials">f　◎　℗　▶</div>
+                  </div>
+
+                  <div>
+                        <h4>SHOP</h4>
+                        <a href="#products">All Products</a>
+                        <a href="#categories">Dogs</a>
+                        <a href="#categories">Cats</a>
+                        <a href="#categories">Birds</a>
+                        <a href="#categories">Small Pets</a>
+                  </div>
+
+                  <div>
+                        <h4>CUSTOMER SERVICE</h4>
+                        <a href="#">My Account</a>
+                        <a href="#">Order Tracking</a>
+                        <a href="#">Returning & Refunds</a>
+                        <a href="#">Shipping Info</a>
+                        <a href="#">FAQs</a>
+                  </div>
+
+                  <div>
+                        <h4>INFORMATION</h4>
+                        <a href="#">About Us</a>
+                        <a href="#">Favorites</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms & conditions</a>
+                        <a href="#">Contact US</a>
+                  </div>
+
+                  <div class="payment">
+                        <h4>WE ACCEPT</h4>
+                        <p>VISA　💳　AMEX</p>
+                        <p>PayPal　 Apple Pay</p>
+                        <p>Google Pay</p>
+                  </div>
+            </div>
+
+            <div class="reserve">
+                  <p>© 2026 PetVeda. All rights reserved.</p>
+            </div>
+            
+       </footer>
+
+  </body>
+</html>

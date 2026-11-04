@@ -528,12 +528,20 @@ input {
 
 /* ===================== Footer ===================== */
 
-.footer {
+/* .footer {
+      max-width: auto;
+      margin: 0 auto;
+      padding: 25px 5%;
+      background: #fbf2d7;
+      margin-top: 5px;
+} */
+
+.footer-grid {
       max-width: auto;
       margin: 0 auto;
       padding: 25px 5%;
       display: grid;
-      grid-template-columns: 1.3fr 1fr  1.3fr 1.3fr 1fr;
+      grid-template-columns: 1.3fr 1fr  1.3fr 1.3fr 1fr ;
       gap: 25px;
       background: #fbf2d7;
       margin-top: 5px;
@@ -578,6 +586,15 @@ input {
       font-weight: 700;
 }
 
+.reserve {
+      max-width: auto;
+      margin: 0 auto;
+      padding: 5px 40%;
+      background: #fbf2d7;
+      font-size: 11px;
+      font-weight: 500;
+
+}
 
 /* ========================= TABLET RESPONSIVENESS ========================= */
 
