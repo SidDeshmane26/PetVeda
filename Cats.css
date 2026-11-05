@@ -344,6 +344,17 @@ span {
     margin: 0;
     padding: 0 10px;
    }
+    .pet-header{
+      display: flex;
+      flex-direction: column;
+      padding: 5px;
+   }
+   .footer-grid{
+      display: grid;
+      grid-template-columns: auto auto auto;
+      text-align: center;
+   }
+
 
 }
 
@@ -353,6 +364,15 @@ span {
     grid-template-columns: auto auto;
     margin: 0;
     padding: 0 10px;
+   }
+   .pet-header{
+      display: flex;
+      flex-direction: column;
+   }
+    .footer-grid{
+      display: grid;
+      grid-template-columns: auto auto auto;
+      text-align: center;
    }
 
 }
