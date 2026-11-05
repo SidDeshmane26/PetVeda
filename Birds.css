@@ -359,6 +359,12 @@ span {
       grid-template-columns: auto auto auto;
       text-align: center;
    }
+   .navbar{
+      display: grid;
+      grid-template-columns: auto auto auto auto auto;
+      text-align: center;
+      gap: 10px;
+  }
 
 }
 
@@ -378,4 +384,10 @@ span {
       grid-template-columns: auto auto auto;
       text-align: center;
    }
+   .navbar{
+      display: grid;
+      grid-template-columns: auto auto auto auto auto;
+      text-align: center;
+      gap: 10px;
+  }
 }
