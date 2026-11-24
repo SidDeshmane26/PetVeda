@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmallPets</title>
+    <link rel="stylesheet" href="smallpets.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="sticky">
+            <header class="pet-header">
+                  <a href="" class="logo">
+                        <!-- <span class="paw">🐾</span> -->
+                        <img src="Assets/hero_back1.png" class="hero-logo">
+                        <div>
+                              <h2>Pet Veda</h2>
+                              <p>Happy Pets, Happy Life</p>
+                        </div>
+                  </a>
+
+                  <form class="search">
+                        <input type="search" id="searchInput" placeholder="Search for products...">
+                        <select aria-label="Product category">
+                              <option >All category</option>
+                              <option >Dogs</option>
+                              <option >Cats</option>
+                              <option >Birds</option>
+                              <option >Small Pets</option>
+                        </select>
+                  </form>
+
+                  <div class="header-links">
+                        <a href="#">
+                              <i class="fa-solid fa-circle-user"></i>
+                              <small>Account</small></a>
+
+                        <a href="#">
+                              <i class="fa-solid fa-heart"></i>
+                              <small>Wishlist</small></a>
+
+                        <a href="#cart">
+                              <i class="fa-solid fa-cart-shopping"></i>
+                              <small>Cart(<span id="cartCount">0</span>)</small></a>
+                  </div>
+
+
+            </header>
+
+            <nav class="navbar">
+                        <a href="index.html" class="active">Home</a>
+                        <a href="shop.html">Shop</a>
+                        <a href="Dogs.html">Dogs</a>
+                        <a href="Cats.html">Cats</a>
+                        <a href="Birds.html">Birds</a>
+                        <a href="smallpets.html">Small Pets</a>
+                        <a href="#favorites">Favorite</a>
+                        <a href="products.html">Products</a>
+                        <a href="contacts.html">Contact Us</a> 
+            </nav>
+      </div>
+
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+
+            <h3>🐈‍EXPLORE Small Pets</h3>
+            <div class="heading">
+                <h1>All Small <span>Pets</span></h1>
+                <p>Discover the wonderful world of small pets and find your perfect furry friend!</p>
+            </div>
+
+        </div>
+
+    </header>
+    <main>
+      <!-- Card Section -->
+        <div class="card-container">
+            <article class="card">
+                <div class="card-image">
+                    <img src="Assets/Small_pets/Rabbiet5.png" alt="Rabbit">
+
+                    <span class="badge">BEST SELLER</span>
+                </div>
+
+                <div class="card-content">
+                    <h3>Rabbit</h3>
+                    <p>More seller petsand most popular</p>
+                    <span class="price">Starting at <span>1499/-</span></span>
+                    <a href="#contact" class="btn">Explore ➡️</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-image">
+                    <img src="Assets/Small_pets/tiger.png" alt="Laptop and programming workspace">
+
+                    <span class="badge">Trending</span>
+                </div>
+
+                <div class="card-content">
+                    <h3>tiger cub</h3>
+                    <p>Powerful and majestic, perfect for experienced pet owners</p>
+                    <span class="price">Starting at <span>99,999/-</span></span>
+                    <a href="#contact" class="btn">Explore ➡️</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-image">
+                    <img src="Assets/Small_pets//moongoose.png" alt="Rabbit">
+
+                    <span class="badge">BEST SELLER</span>
+                </div>
+
+                <div class="card-content">
+                    <h3>Pup</h3>
+                    <p>Adorable and playful, perfect for families with children</p>
+                    <span class="price">Starting at <span>2499/-</span></span>
+                    <a href="#contact" class="btn">Explore ➡️</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-image">
+                    <img src="Assets/Small_pets/hamsters.png" alt="Laptop and programming workspace">
+
+                    <span class="badge">✨New</span>
+                </div>
+
+                <div class="card-content">
+                    <h3>Hamsters</h3>
+                    <p>Small and cute, perfect for those with limited space</p>
+                    <span class="price">Starting at <span>999/-</span></span>
+                    <a href="#contact" class="btn">Explore ➡️</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-image">
+                    <img src="Assets/Small_pets/Hedgehogs.png" alt="Laptop and programming workspace">
+
+                    <span class="badge"> ✨New</span>
+                </div>
+
+                <div class="card-content">
+                    <h3>Hedgehogs</h3>
+                    <p>Small and spiky, perfect for those who love unique pets</p>
+                    <span class="price">Starting at <span>1999/-</span></span>
+                    <a href="#contact" class="btn">Explore ➡️</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-image">
+                    <img src="Assets/Small_pets/Puppy.png" alt="Laptop and programming workspace">
+
+                    <span class="badge">✨New</span>
+                </div>
+
+                <div class="card-content">
+                    <h3>Puppy </h3>
+                    <p>Adorable and playful, perfect for families with children</p>
+                    <span class="price">Starting at <span>2999/-</span></span>
+                    <a href="#contact" class="btn">Explore ➡️</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-image">
+                    <img src="Assets/Small_pets/Cats.png" alt="Laptop and programming workspace">
+
+                    <span class="badge">✨New</span>
+                </div>
+
+                <div class="card-content">
+                    <h3>Pip</h3>
+                    <p>Small and cute, perfect for those with limited space</p>
+                    <span class="price">Starting at <span>2999/-</span></span>
+                    <a href="#contact" class="btn">Explore ➡️</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-image">
+                    <img src="Assets/Small_pets/fish.png" alt="Laptop and programming workspace">
+
+                    <span class="badge">✨New</span>
+                </div>
+
+                <div class="card-content">
+                    <h3>Bubbles</h3>
+                    <p>Playful and friendly, great for interactive play sessions</p>
+                    <span class="price">Starting at <span>599/-</span></span>
+                    <a href="#contact" class="btn">Explore ➡️</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-image">
+                    <img src="Assets/Small_pets/canary2.png" alt="Laptop and programming workspace">
+
+                    <span class="badge">✨New</span>
+                </div>
+
+                <div class="card-content">
+                    <h3>Canary</h3>
+                    <p>Colorful and melodious, perfect for bird lovers</p>
+                    <span class="price">Starting at <span>999/-</span></span>
+                    <a href="#contact" class="btn">Explore ➡️</a>
+                </div>
+                
+            </article>
+
+            <article class="card">
+                <div class="card-image">
+                    <img src="Assets/Small_pets/Chinchillas.png" alt="Laptop and programming workspace">
+
+                    <span class="badge">✨New</span>
+                </div>
+
+                <div class="card-content">
+                    <h3>Chinchillas </h3>
+                    <p>Soft and cuddly, perfect for those who love interactive pets</p>
+                    <span class="price">Starting at <span>3999/-</span></span>
+                    <a href="#contact" class="btn">Explore ➡️</a>
+                </div>
+                
+            </article>
+
+            <article class="card">
+                <div class="card-image">
+                    <img src="Assets/Small_pets/degus1.png" alt="Laptop and programming workspace">
+
+                    <span class="badge">✨New</span>
+                </div>
+
+                <div class="card-content">
+                    <h3>Degus</h3>
+                    <p>Playful and curious, great for interactive play sessions</p>
+                    <span class="price">Starting at <span>5999/-</span></span>
+                    <a href="#contact" class="btn">Explore ➡️</a>
+                </div>
+                
+            </article>
+
+            <article class="card">
+                <div class="card-image">
+                    <img src="Assets/Small_pets/ferret1.png" alt="Laptop and programming workspace">
+
+                    <span class="badge">✨New</span>
+                </div>
+
+                <div class="card-content">
+                    <h3>Ferret</h3>
+                    <p>Playful and curious, great for interactive play sessions</p>
+                    <span class="price">Starting at <span>4999/-</span></span>
+                    <a href="#contact" class="btn">Explore ➡️</a>
+                </div>
+                
+            </article>
+        </div>
+    </main>
+
+    <footer class="footer" id="footer">
+            <div class="footer-grid">
+                  <div class="footer-brand">
+                        <h2>🐾 Pet Veda</h2>
+                        <p>Happy Pets, Happy Life</p>
+                        <p>Everything your pet needs,<br>all in one place.</p>
+                        <div class="socials">f　◎　℗　▶</div>
+                  </div>
+
+                  <div>
+                        <h4>SHOP</h4>
+                        <a href="#products">All Products</a>
+                        <a href="#categories">Dogs</a>
+                        <a href="#categories">Cats</a>
+                        <a href="#categories">Birds</a>
+                        <a href="#categories">Small Pets</a>
+                  </div>
+
+                  <div>
+                        <h4>CUSTOMER SERVICE</h4>
+                        <a href="#">My Account</a>
+                        <a href="#">Order Tracking</a>
+                        <a href="#">Returning & Refunds</a>
+                        <a href="#">Shipping Info</a>
+                        <a href="#">FAQs</a>
+                  </div>
+
+                  <div>
+                        <h4>INFORMATION</h4>
+                        <a href="#">About Us</a>
+                        <a href="#">Favorites</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms & conditions</a>
+                        <a href="#">Contact US</a>
+                  </div>
+
+                  <div class="payment">
+                        <h4>WE ACCEPT</h4>
+                        <p>VISA　💳　AMEX</p>
+                        <p>PayPal　 Apple Pay</p>
+                        <p>Google Pay</p>
+                  </div>
+            </div>
+
+            <div class="reserve">
+                  <p>© 2026 PetVeda. All rights reserved.</p>
+            </div>
+            
+       </footer>
+
+</body>
+
+</html>
