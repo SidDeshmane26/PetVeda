@@ -1,21 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - Pet Veda</title>
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css">
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="contacts.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="contacts.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css">
 </head>
-<body>
 
-  <div class="sticky">
+<body>
+    <div class="sticky">
             <header class="pet-header">
                   <a href="" class="logo">
                         <!-- <span class="paw">🐾</span> -->
@@ -55,12 +50,12 @@
             </header>
 
             <nav class="navbar">
-                        <a href="/index.html" >Home</a>
+                        <a href="index.html" class="active">Home</a>
                         <a href="/shop.html">Shop</a>
                         <a href="/Dogs.html">Dogs</a>
                         <a href="/Cats.html">Cats</a>
-                        <a href="#categories">Birds</a>
-                        <a href="#categories">Small Pets</a>
+                        <a href="/Birds.html">Birds</a>
+                        <a href="/smallpets.html">Small Pets</a>
                         <a href="#favorites">Favorite</a>
                         <a href="/products.html">Products</a>
                         <a href="/contacts.html">Contact Us</a>   
@@ -69,35 +64,11 @@
 
   <main class="contact-section">
     <div class="section-title">
+      <span class="section-badge">Pet Veda Support</span>
       <h2>Get In Touch With Us</h2>
       <p>If you have any query then get touch with us</p>
     </div>
 
-   
-    <div class="contact-cards-grid">
-      <div class="info-card">
-        <div class="info-icon">📞</div>
-        <h3>Call Us</h3>
-        <p>Mon - Sat: 9:00 AM - 8:00 PM</p>
-        <a href="tel:+919876543210">+91 98765 43210</a>
-      </div>
-
-      <div class="info-card">
-        <div class="info-icon">✉️</div>
-        <h3>Email Support</h3>
-        <p>Expect a response within 24 hours</p>
-        <a href="mailto:support@petveda.com">support@petveda.com</a>
-      </div>
-
-      <div class="info-card">
-        <div class="info-icon">📍</div>
-        <h3>Visit Our Store</h3>
-        <p>Pet Veda</p>
-        <span>Pune, Maharashtra</span>
-      </div>
-    </div>
-
-  
     <div class="contact-container">
       <div class="form-wrapper">
         <h3>Send Us Message</h3>
@@ -140,64 +111,90 @@
 
           <div class="form-group">
             <label for="message">Message *</label>
-            <textarea id="message" rows="5" placeholder="Write your question or request here..." required></textarea>
+            <textarea id="message" rows="3" placeholder="Write your question or request here..." required></textarea>
           </div>
 
           <button type="submit" class="btn-submit">Send Message</button>
         </form>
       </div>
+
+      <aside class="contact-right-panel">
+        <div class="contact-cards-grid">
+          <div class="info-card">
+            <div class="info-icon">📞</div>
+            <i class="info-icon"></i>
+            <i class="fa-duotone fa-thin fa-phone"></i>
+            <h3>Call Us</h3>
+            <p>Mon - Sat: 9:00 AM - 8:00 PM</p>
+            <a href="tel:+919876543210">+91 98765 43210</a>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">✉️</div>
+            <h3>Email Support</h3>
+            <p>Expect a response within 24 hours</p>
+            <a href="mailto:support@petveda.com">support@petveda.com</a>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">📍</div>
+            <h3>Visit Our Store</h3>
+            <p>Pet Veda</p>
+            <span>Pune, Maharashtra</span>
+          </div>
+        </div>
+      </aside>
     </div>
-    </main>
+  </main>
 
-    <footer class="footer" id="footer">
-            <div class="footer-grid">
-                  <div class="footer-brand">
-                        <h2>🐾 Pet Veda</h2>
-                        <p>Happy Pets, Happy Life</p>
-                        <p>Everything your pet needs,<br>all in one place.</p>
-                        <div class="socials">f　◎　℗　▶</div>
-                  </div>
+  <footer class="footer" id="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h2>🐾 Pet Veda</h2>
+        <p>Happy Pets, Happy Life</p>
+        <p>Everything your pet needs,<br>all in one place.</p>
+        <div class="socials">f ◎ ℗ ▶</div>
+      </div>
 
-                  <div>
-                        <h4>SHOP</h4>
-                        <a href="#products">All Products</a>
-                        <a href="#categories">Dogs</a>
-                        <a href="#categories">Cats</a>
-                        <a href="#categories">Birds</a>
-                        <a href="#categories">Small Pets</a>
-                  </div>
+      <div>
+        <h4>SHOP</h4>
+        <a href="#products">All Products</a>
+        <a href="#categories">Dogs</a>
+        <a href="#categories">Cats</a>
+        <a href="#categories">Birds</a>
+        <a href="#categories">Small Pets</a>
+      </div>
 
-                  <div>
-                        <h4>CUSTOMER SERVICE</h4>
-                        <a href="#">My Account</a>
-                        <a href="#">Order Tracking</a>
-                        <a href="#">Returning & Refunds</a>
-                        <a href="#">Shipping Info</a>
-                        <a href="#">FAQs</a>
-                  </div>
+      <div>
+        <h4>CUSTOMER SERVICE</h4>
+        <a href="#">My Account</a>
+        <a href="#">Order Tracking</a>
+        <a href="#">Returning & Refunds</a>
+        <a href="#">Shipping Info</a>
+        <a href="#">FAQs</a>
+      </div>
 
-                  <div>
-                        <h4>INFORMATION</h4>
-                        <a href="#">About Us</a>
-                        <a href="#">Favorites</a>
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms & conditions</a>
-                        <a href="#">Contact US</a>
-                  </div>
+      <div>
+        <h4>INFORMATION</h4>
+        <a href="#">About Us</a>
+        <a href="#">Favorites</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & conditions</a>
+        <a href="#">Contact US</a>
+      </div>
 
-                  <div class="payment">
-                        <h4>WE ACCEPT</h4>
-                        <p>VISA　💳　AMEX</p>
-                        <p>PayPal　 Apple Pay</p>
-                        <p>Google Pay</p>
-                  </div>
-            </div>
+      <div class="payment">
+        <h4>WE ACCEPT</h4>
+        <p>VISA 💳 AMEX</p>
+        <p>PayPal  Apple Pay</p>
+        <p>Google Pay</p>
+      </div>
+    </div>
 
-            <div class="reserve">
-                  <p>© 2026 PetVeda. All rights reserved.</p>
-            </div>
-            
-       </footer>
+    <div class="reserve">
+      <p>© 2026 PetVeda. All rights reserved.</p>
+    </div>
+  </footer>
 
-  </body>
+</body>
 </html>
