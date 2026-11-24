@@ -346,20 +346,57 @@ span {
       font-weight: 500;
 
 }
+/* General responsive fixes */
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
 
 
-/* ================= TABLET RESPONSIVE ================= */
+/* =========================================
+   LARGE DESKTOP (1200px and above)
+========================================= */
 
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
+
+    .card-container {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        max-width: 1400px;
+        margin: 50px auto;
+        padding: 0 45px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1.3fr 1fr 1.3fr 1.3fr 1fr;
+    }
+
+}
+
+
+/* =========================================
+   LAPTOP AND SMALL DESKTOP (801px - 1199px)
+========================================= */
+
+@media (min-width: 801px) and (max-width: 1199px) {
 
     .pet-header {
-        padding: 10px 3%;
+        padding: 8px 3%;
         gap: 15px;
     }
 
     .hero-logo {
-        height: 75px;
         width: 75px;
+        height: 75px;
     }
 
     .logo h2 {
@@ -367,29 +404,20 @@ span {
     }
 
     .search {
-        max-width: 380px;
+        max-width: 400px;
     }
 
     .header-links {
-        gap: 12px;
-    }
-
-    .header-links a {
-        font-size: 21px;
+        gap: 15px;
     }
 
     .navbar {
         gap: 20px;
-        flex-wrap: wrap;
         font-size: 14px;
     }
 
-    .container {
-        margin: 35px auto;
-    }
-
     .heading h1 {
-        font-size: 40px;
+        font-size: 42px;
     }
 
     .heading p {
@@ -397,18 +425,18 @@ span {
     }
 
     .card-container {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        margin: 0 25px;
-        padding: 0 15px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        margin: 45px auto;
+        padding: 0 25px;
         gap: 20px;
     }
 
-    .card {
-        max-width: 100%;
+    .card-image {
+        height: 190px;
     }
 
-    .card-image {
-        height: 200px;
+    .card-content {
+        padding: 16px;
     }
 
     .footer-grid {
@@ -420,75 +448,118 @@ span {
         padding: 10px 20px;
         text-align: center;
     }
+
 }
-/* ================= SMALL MOBILE ================= */
 
-@media (max-width: 360px) {
 
-    .heading h1 {
-        font-size: 25px;
+/* =========================================
+   TABLETS AND IPADS (551px - 800px)
+========================================= */
+
+@media (min-width: 551px) and (max-width: 800px) {
+
+    .pet-header {
+        flex-wrap: wrap;
+        padding: 10px 3%;
+        gap: 12px;
     }
 
-    .heading p {
+    .hero-logo {
+        width: 65px;
+        height: 65px;
+    }
+
+    .logo h2 {
+        font-size: 20px;
+    }
+
+    .logo p {
+        font-size: 11px;
+    }
+
+    .search {
+        order: 3;
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .header-links {
+        gap: 15px;
+    }
+
+    .header-links a {
+        font-size: 21px;
+    }
+
+    .header-links small {
+        font-size: 11px;
+    }
+
+    .navbar {
+        justify-content: flex-start;
+        overflow-x: auto;
+        gap: 20px;
+        padding: 12px 15px;
         font-size: 13px;
     }
 
+    .container {
+        margin: 35px auto;
+        padding: 0 15px;
+    }
+
+    .heading h1 {
+        font-size: 36px;
+    }
+
+    .heading p {
+        font-size: 16px;
+    }
+
     .card-container {
-        padding: 0 10px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin: 35px auto;
+        padding: 0 20px;
+        gap: 18px;
     }
 
     .card-image {
         height: 180px;
     }
 
+    .card-content {
+        padding: 15px;
+    }
+
     .footer-grid {
-        grid-template-columns: auto;
-        gap: 15px;
-        padding: 20px 15px;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 25px 5%;
+        gap: 20px;
     }
 
-    .footer-brand {
-        grid-column: 1 / -1;
+    .reserve {
+        padding: 10px 15px;
+        text-align: center;
     }
 
-    .header-links {
-        gap: 9px;
-    }
-
-    .header-links a {
-        font-size: 17px;
-    }
-
-    .hero-logo {
-        height: 48px;
-        width: 48px;
-    }
-
-    .logo h2 {
-        font-size: 16px;
-    }
 }
 
-/* ================= MOBILE RESPONSIVE ================= */
 
-@media (max-width: 550px) {
+/* =========================================
+   MOBILE PHONES (361px - 550px)
+========================================= */
 
-    /* Header */
+@media (min-width: 361px) and (max-width: 550px) {
 
     .pet-header {
-        padding: 10px 15px;
-        display: flex;
         flex-wrap: wrap;
+        padding: 10px 15px;
         gap: 12px;
     }
 
-    .logo {
-        gap: 5px;
-    }
-
     .hero-logo {
-        height: 55px;
         width: 55px;
+        height: 55px;
     }
 
     .logo h2 {
@@ -517,11 +588,10 @@ span {
 
     .header-links {
         gap: 12px;
-        margin-left: auto;
     }
 
     .header-links a {
-        font-size: 19px;
+        font-size: 20px;
     }
 
     .header-links small {
@@ -532,18 +602,18 @@ span {
 
     .navbar {
         justify-content: flex-start;
-        gap: 10px;
-        padding: 12px 15px;
         overflow-x: auto;
-        white-space: nowrap;
+        gap: 18px;
+        padding: 12px 15px;
         font-size: 13px;
+        white-space: nowrap;
     }
 
     .navbar .active {
-        padding: 6px 13px;
+        padding: 6px 14px;
     }
 
-    /* Main Heading */
+    /* Heading */
 
     .container {
         margin: 30px auto;
@@ -560,23 +630,21 @@ span {
     }
 
     .heading h1 {
-        font-size: 30px;
-        line-height: 1.3;
+        font-size: 32px;
     }
 
     .heading p {
-        font-size: 14px;
-        line-height: 1.6;
+        font-size: 15px;
+        line-height: 1.5;
     }
 
     /* Cards */
 
     .card-container {
-        grid-template-columns: 1fr;
-        margin: 0;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin: 30px auto;
         padding: 0 15px;
-        gap: 20px;
-        margin-top: 30px;
+        gap: 15px;
     }
 
     .card {
@@ -585,37 +653,39 @@ span {
     }
 
     .card-image {
-        height: 210px;
+        height: 160px;
     }
 
     .card-content {
-        padding: 18px;
+        padding: 12px;
     }
 
     .card-content h3 {
-        font-size: 17px;
+        font-size: 13px;
+        padding: 5px 8px;
     }
 
     .card-content p {
-        font-size: 14px;
+        font-size: 12px;
+        margin-bottom: 12px;
     }
 
     .price {
-        margin: 0 10px;
-        font-size: 11px;
+        margin: 0 5px;
+        font-size: 10px;
     }
 
     .btn {
-        padding: 8px 15px;
-        font-size: 13px;
+        padding: 6px 10px;
+        font-size: 11px;
     }
 
     /* Footer */
 
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
-        padding: 25px 20px;
-        gap: 20px;
+        padding: 22px 15px;
+        gap: 18px;
     }
 
     .footer h2 {
@@ -623,42 +693,195 @@ span {
     }
 
     .footer h4 {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .footer p,
     .footer a {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .reserve {
-        padding: 12px 15px;
+        padding: 10px 15px;
         text-align: center;
         font-size: 10px;
     }
+
 }
 
-/*Small Mobile view     
+/* =========================================
+   SMALL MOBILE PHONES (UP TO 360px)
+========================================= */
 
-@media screen and (max-width: 360px) {
+@media (max-width: 360px) {
 
     body {
-        background: lightblue !important;
-    }
-
-    .card-container {
-        display: grid !important;
-        grid-template-columns: 1fr !important;
-        margin: 0 !important;
-        padding: 10px !important;
+        font-size: 13px;
     }
 
     .pet-header {
-        flex-wrap: wrap !important;
+        flex-wrap: wrap;
+        padding: 8px 12px;
+        gap: 10px;
+    }
+
+    .logo {
+        gap: 5px;
+    }
+
+    .hero-logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .logo h2 {
+        font-size: 16px;
+    }
+
+    .logo p {
+        font-size: 9px;
+    }
+
+    .search {
+        order: 3;
+        flex: 1 1 100%;
+        max-width: 100%;
+        height: 38px;
+    }
+
+    .search input {
+        padding: 8px;
+        font-size: 11px;
+    }
+
+    .search select {
+        max-width: 95px;
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .header-links {
+        gap: 10px;
+    }
+
+    .header-links a {
+        font-size: 18px;
+    }
+
+    .header-links small {
+        font-size: 9px;
+    }
+
+    .navbar {
+        justify-content: flex-start;
+        overflow-x: auto;
+        gap: 15px;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .navbar .active {
+        padding: 6px 12px;
+    }
+
+    .container {
+        margin: 25px auto;
+        padding: 0 12px;
+    }
+
+    h3 {
+        font-size: 13px;
+        padding: 5px 12px;
+    }
+
+    .heading {
+        margin-top: 15px;
+    }
+
+    .heading h1 {
+        font-size: 27px;
+    }
+
+    .heading p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+        margin: 25px auto;
+        padding: 0 12px;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .card-image {
+        height: 190px;
+    }
+
+    .card-content {
+        padding: 15px;
+    }
+
+    .card-content h3 {
+        font-size: 14px;
+    }
+
+    .card-content p {
+        font-size: 12px;
+    }
+
+    .price {
+        margin: 0 10px;
+        font-size: 10px;
+    }
+
+    .btn {
+        padding: 7px 12px;
+        font-size: 12px;
     }
 
     .footer-grid {
-        grid-template-columns: 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr;
+        padding: 20px 12px;
+        gap: 18px;
     }
 
-}*/
+    .footer h2 {
+        font-size: 16px;
+    }
+
+    .footer h4 {
+        font-size: 11px;
+    }
+
+    .footer p,
+    .footer a {
+        font-size: 10px;
+    }
+
+    .reserve {
+        padding: 10px;
+        text-align: center;
+        font-size: 10px;
+    }
+
+}
+
+
+/* =========================================
+   PREVENT HORIZONTAL OVERFLOW
+========================================= */
+
+img {
+    max-width: 100%;
+}
+
+.card-container,
+.footer-grid {
+    width: 100%;
+}
