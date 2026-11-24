@@ -337,54 +337,526 @@ span {
 
 }
 
-/* Responsive for mobile 500px width*/
-@media (max-width: 500px) {
-   .card-container{
-    grid-template-columns: auto auto;
-    margin: 0;
-    padding: 0 10px;
-   }
-    .pet-header{
-      display: flex;
-      flex-direction: column;
-      padding: 5px;
-   }
-   .footer-grid{
-      display: grid;
-      grid-template-columns: auto auto auto;
-      text-align: center;
-   }
-   .navbar{
-      display: grid;
-      grid-template-columns: auto auto auto auto auto;
-      text-align: center;
-      gap: 10px;
-  }
 
+/* =========================================
+   LARGE DESKTOP (1200px and above)
+========================================= */
+
+@media (min-width: 1200px) {
+
+    .card-container {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        max-width: 1400px;
+        margin: 50px auto;
+        padding: 0 45px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1.3fr 1fr 1.3fr 1.3fr 1fr;
+    }
 
 }
 
-/* Responsive for Tablet 800px */
-@media (max-width: 800px) {
-   .card-container{
-    grid-template-columns: auto auto;
-    margin: 0;
-    padding: 0 10px;
-   }
-   .pet-header{
-      display: flex;
-      flex-direction: column;
-   }
-    .footer-grid{
-      display: grid;
-      grid-template-columns: auto auto auto;
-      text-align: center;
-   }
-   .navbar{
-      display: grid;
-      grid-template-columns: auto auto auto auto auto;
-      text-align: center;
-      gap: 10px;
-  }
 
+/* =========================================
+   LAPTOP AND SMALL DESKTOP (801px - 1199px)
+========================================= */
+
+@media (min-width: 801px) and (max-width: 1199px) {
+
+    .pet-header {
+        padding: 8px 3%;
+        gap: 15px;
+    }
+
+    .hero-logo {
+        width: 75px;
+        height: 75px;
+    }
+
+    .logo h2 {
+        font-size: 22px;
+    }
+
+    .search {
+        max-width: 400px;
+    }
+
+    .header-links {
+        gap: 15px;
+    }
+
+    .navbar {
+        gap: 20px;
+        font-size: 14px;
+    }
+
+    .heading h1 {
+        font-size: 42px;
+    }
+
+    .heading p {
+        font-size: 17px;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        margin: 45px auto;
+        padding: 0 25px;
+        gap: 20px;
+    }
+
+    .card-image {
+        height: 190px;
+    }
+
+    .card-content {
+        padding: 16px;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 25px 4%;
+    }
+
+    .reserve {
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+}
+
+
+/* =========================================
+   TABLETS AND IPADS (551px - 800px)
+========================================= */
+
+@media (min-width: 551px) and (max-width: 800px) {
+
+    .pet-header {
+        flex-wrap: wrap;
+        padding: 10px 3%;
+        gap: 12px;
+    }
+
+    .hero-logo {
+        width: 65px;
+        height: 65px;
+    }
+
+    .logo h2 {
+        font-size: 20px;
+    }
+
+    .logo p {
+        font-size: 11px;
+    }
+
+    .search {
+        order: 3;
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .header-links {
+        gap: 15px;
+    }
+
+    .header-links a {
+        font-size: 21px;
+    }
+
+    .header-links small {
+        font-size: 11px;
+    }
+
+    .navbar {
+        justify-content: flex-start;
+        overflow-x: auto;
+        gap: 20px;
+        padding: 12px 15px;
+        font-size: 13px;
+    }
+
+    .container {
+        margin: 35px auto;
+        padding: 0 15px;
+    }
+
+    .heading h1 {
+        font-size: 36px;
+    }
+
+    .heading p {
+        font-size: 16px;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin: 35px auto;
+        padding: 0 20px;
+        gap: 18px;
+    }
+
+    .card-image {
+        height: 180px;
+    }
+
+    .card-content {
+        padding: 15px;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 25px 5%;
+        gap: 20px;
+    }
+
+    .reserve {
+        padding: 10px 15px;
+        text-align: center;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE PHONES (361px - 550px)
+========================================= */
+
+@media (min-width: 361px) and (max-width: 550px) {
+
+    .pet-header {
+        flex-wrap: wrap;
+        padding: 10px 15px;
+        gap: 12px;
+    }
+
+    .hero-logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    .logo h2 {
+        font-size: 18px;
+    }
+
+    .logo p {
+        font-size: 10px;
+    }
+
+    .search {
+        order: 3;
+        flex: 1 1 100%;
+        max-width: 100%;
+        height: 40px;
+    }
+
+    .search input {
+        font-size: 12px;
+    }
+
+    .search select {
+        max-width: 110px;
+        font-size: 11px;
+    }
+
+    .header-links {
+        gap: 12px;
+    }
+
+    .header-links a {
+        font-size: 20px;
+    }
+
+    .header-links small {
+        font-size: 10px;
+    }
+
+    /* Navigation */
+
+    .navbar {
+        justify-content: flex-start;
+        overflow-x: auto;
+        gap: 18px;
+        padding: 12px 15px;
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    .navbar .active {
+        padding: 6px 14px;
+    }
+
+    /* Heading */
+
+    .container {
+        margin: 30px auto;
+        padding: 0 15px;
+    }
+
+    h3 {
+        font-size: 14px;
+        padding: 6px 15px;
+    }
+
+    .heading {
+        margin-top: 15px;
+    }
+
+    .heading h1 {
+        font-size: 32px;
+    }
+
+    .heading p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    /* Cards */
+
+    .card-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin: 30px auto;
+        padding: 0 15px;
+        gap: 15px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .card-image {
+        height: 160px;
+    }
+
+    .card-content {
+        padding: 12px;
+    }
+
+    .card-content h3 {
+        font-size: 13px;
+        padding: 5px 8px;
+    }
+
+    .card-content p {
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+
+    .price {
+        margin: 0 5px;
+        font-size: 10px;
+    }
+
+    .btn {
+        padding: 6px 10px;
+        font-size: 11px;
+    }
+
+    /* Footer */
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 22px 15px;
+        gap: 18px;
+    }
+
+    .footer h2 {
+        font-size: 17px;
+    }
+
+    .footer h4 {
+        font-size: 12px;
+    }
+
+    .footer p,
+    .footer a {
+        font-size: 10px;
+    }
+
+    .reserve {
+        padding: 10px 15px;
+        text-align: center;
+        font-size: 10px;
+    }
+
+}
+
+/* =========================================
+   SMALL MOBILE PHONES (UP TO 360px)
+========================================= */
+
+@media (max-width: 360px) {
+
+    body {
+        font-size: 13px;
+    }
+
+    .pet-header {
+        flex-wrap: wrap;
+        padding: 8px 12px;
+        gap: 10px;
+    }
+
+    .logo {
+        gap: 5px;
+    }
+
+    .hero-logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .logo h2 {
+        font-size: 16px;
+    }
+
+    .logo p {
+        font-size: 9px;
+    }
+
+    .search {
+        order: 3;
+        flex: 1 1 100%;
+        max-width: 100%;
+        height: 38px;
+    }
+
+    .search input {
+        padding: 8px;
+        font-size: 11px;
+    }
+
+    .search select {
+        max-width: 95px;
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .header-links {
+        gap: 10px;
+    }
+
+    .header-links a {
+        font-size: 18px;
+    }
+
+    .header-links small {
+        font-size: 9px;
+    }
+
+    .navbar {
+        justify-content: flex-start;
+        overflow-x: auto;
+        gap: 15px;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .navbar .active {
+        padding: 6px 12px;
+    }
+
+    .container {
+        margin: 25px auto;
+        padding: 0 12px;
+    }
+
+    h3 {
+        font-size: 13px;
+        padding: 5px 12px;
+    }
+
+    .heading {
+        margin-top: 15px;
+    }
+
+    .heading h1 {
+        font-size: 27px;
+    }
+
+    .heading p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+        margin: 25px auto;
+        padding: 0 12px;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .card-image {
+        height: 190px;
+    }
+
+    .card-content {
+        padding: 15px;
+    }
+
+    .card-content h3 {
+        font-size: 14px;
+    }
+
+    .card-content p {
+        font-size: 12px;
+    }
+
+    .price {
+        margin: 0 10px;
+        font-size: 10px;
+    }
+
+    .btn {
+        padding: 7px 12px;
+        font-size: 12px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        padding: 20px 12px;
+        gap: 18px;
+    }
+
+    .footer h2 {
+        font-size: 16px;
+    }
+
+    .footer h4 {
+        font-size: 11px;
+    }
+
+    .footer p,
+    .footer a {
+        font-size: 10px;
+    }
+
+    .reserve {
+        padding: 10px;
+        text-align: center;
+        font-size: 10px;
+    }
+
+}
+
+
+/* =========================================
+   PREVENT HORIZONTAL OVERFLOW
+========================================= */
+
+img {
+    max-width: 100%;
+}
+
+.card-container,
+.footer-grid {
+    width: 100%;
 }
